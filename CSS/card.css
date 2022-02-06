@@ -1,0 +1,104 @@
+figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    overflow: hidden;
+}
+
+figure:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+figure img {
+    width: 100%;
+}
+
+figure:hover img {
+    transform: scale(1.25);
+    transition: 0.25s;
+}
+
+figcaption {
+    bottom: 0;
+}
+
+.h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+figcaption {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 30px;
+    background-color: rgba(black, 0.85);
+    box-shadow: 0 0 20px rgba(black, 0.4);
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+}
+
+.h3 img {
+    border-radius: 100%;
+    width: 5%;
+    position: unset;
+}
+
+.buton {
+    border-radius: 10px;
+    margin: 1 px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: pink;
+}
+
+.h3__span {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .buton {
+        display: none;
+    }
+    .h3 {
+        font-size: 50px;
+    }
+    .h3 img {
+        width: 30%;
+    }
+    .h3__span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .buton {
+        display: none;
+    }
+    .h3 {
+        font-size: 50px;
+    }
+    .h3 img {
+        width: 20%;
+    }
+    .h3__span {
+        display: block;
+    }
+}
